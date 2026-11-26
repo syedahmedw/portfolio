@@ -1,6 +1,6 @@
 # Syed Ahmed W | Portfolio
 
-My personal portfolio covers web development, Android apps, and data analytics. It includes seven projects, screenshot galleries, an animated avatar with my recorded introduction, and a downloadable résumé.
+My personal portfolio covers web development, Android apps, and data analytics. It includes seven projects, screenshot galleries, an animated avatar with my recorded introduction, and a downloadable resume.
 
 ## Screenshots
 
