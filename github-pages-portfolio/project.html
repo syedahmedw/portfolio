@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Project details from Syed Ahmed W's portfolio.">
+  <title>Project — Syed Ahmed W</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <script src="link-previews.js" defer></script>
+</head>
+<body class="detail-page">
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress-bar"></span></div>
+
+  <div class="command-overlay" id="command-overlay" hidden>
+    <div class="command-dialog" role="dialog" aria-modal="true" aria-label="Quick navigation">
+      <div class="command-input-row">
+        <span>⌕</span>
+        <input id="command-input" type="search" placeholder="Jump to a section or page…" autocomplete="off">
+        <kbd>ESC</kbd>
+      </div>
+      <div class="command-results" id="command-results"></div>
+      <p class="command-hint">Use ↑ ↓ to navigate · Enter to open · Esc to close</p>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Syed Ahmed W home">SA<span>W</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="projects.html">Projects</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="command-trigger" type="button" aria-label="Open quick navigation" title="Quick navigation (Ctrl/⌘ K)">Search <kbd>⌘K</kbd></button>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme">◐</button>
+    </div>
+  </header>
+
+  <main id="main" class="section-wrap detail-main">
+    <div class="hub-breadcrumb">
+      <a href="index.html">Portfolio</a><span>/</span>
+      <a href="projects.html">Projects Hub</a><span>/</span>
+      <span id="detail-crumb">Project</span>
+    </div>
+
+    <section class="detail-hero">
+      <div class="hero-kicker">
+        <span class="status-dot"></span>
+        <span id="detail-category">PROJECT</span>
+      </div>
+      <h1 id="detail-title">Project details</h1>
+      <p id="detail-summary" class="detail-summary"></p>
+      <div id="detail-tags" class="card-tags"></div>
+      <div id="detail-actions" class="detail-actions"></div>
+    </section>
+
+    <!-- Screenshot gallery (shown when screenshots exist) -->
+    <section id="detail-gallery-section" class="screenshot-section" hidden>
+      <div class="screenshot-heading">
+        <div>
+          <h2>Project previews</h2>
+        </div>
+      </div>
+      <figure class="gallery">
+        <a class="gallery-full-size" target="_blank" rel="noopener"><img alt=""></a>
+        <figcaption class="gallery-information">
+          <span class="gallery-caption" aria-live="polite"></span>
+          <div class="gallery-controls">
+            <button class="gallery-prev" type="button" aria-label="Previous screenshot">‹</button>
+            <button class="gallery-next" type="button" aria-label="Next screenshot">›</button>
+          </div>
+        </figcaption>
+      </figure>
+      <div class="gallery-picker" role="group" aria-label="Choose a screenshot"></div>
+    </section>
+
+    <!-- About the project -->
+    <section class="detail-content">
+      <div>
+        <h2>What it's about</h2>
+      </div>
+      <div class="detail-copy">
+        <p id="detail-about"></p>
+      </div>
+    </section>
+
+    <!-- Feature list -->
+    <section class="detail-content detail-two-col">
+      <div>
+        <h2>What it explores</h2>
+      </div>
+      <ul id="detail-features" class="feature-list"></ul>
+    </section>
+
+    <!-- Tech stack detail (new section) -->
+    <section id="detail-tech-section" class="detail-content detail-two-col" hidden>
+      <div>
+        <h2>Technical details</h2>
+      </div>
+      <div id="detail-tech" class="detail-copy"></div>
+    </section>
+
+    <!-- Next project nav -->
+    <section class="next-project">
+      <div>
+        <h2>More work, one click away.</h2>
+      </div>
+      <a class="button button-outline" href="projects.html">Browse all projects</a>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap">
+    <a class="wordmark" href="index.html">SA<span>W</span></a>
+
+    <span>© <span id="year"></span> Syed Ahmed W</span>
+  </footer>
+</body>
+</html>
