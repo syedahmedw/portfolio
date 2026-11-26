@@ -1,0 +1,9 @@
+// Audio envelope sampled every 40 ms from the included introduction.
+const avatarMouthFrames =
+  '0009uvtpdea73698kzggc10qgibmkla3210000001kwede5elh84ecbfc0cdhlea005b97af88225eda7665fvso74' +
+  '002mplipliihf88eomna243de8eha86did4007c920dd600035321100000002hzzcdlmcb9kzx7jztob102eid810' +
+  '6ol78gi9lsl33daadc2347d5317tzvbgd1106hhe1020009ooje30akibbcd932gxvxecsqlabmdfjd000bhhffd73' +
+  '0000000gied70000mndd212mno81ddec2005cajmj6mnd86300000000000001axupqe10dhb1000glmc9fmkc5pkh' +
+  '8ai4009srrqnb5ceejkjea7fde18mmg5365311200018fdddbc60bjgh39hdbab47d879a32a97104865328e60000' +
+  'fh9100017gga8psh47bdc5663003632110000000009rf8otcffha0kun6ek4134icgd99210000000dkrg308fspj' +
+  '7zzgbjj63jdc6cdc507dbb8631139nswi9gwqgddbbghe3kjiba30000003em301ejeec520000000';

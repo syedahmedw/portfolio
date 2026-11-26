@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Explore software and data projects by Syed Ahmed W.">
+  <title>Projects Hub — Syed Ahmed W</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+  <script src="link-previews.js" defer></script>
+</head>
+<body class="projects-page">
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress-bar"></span></div>
+
+  <div class="command-overlay" id="command-overlay" hidden>
+    <div class="command-dialog" role="dialog" aria-modal="true" aria-label="Quick navigation">
+      <div class="command-input-row">
+        <span>⌕</span>
+        <input id="command-input" type="search" placeholder="Jump to a section or page…" autocomplete="off">
+        <kbd>ESC</kbd>
+      </div>
+      <div class="command-results" id="command-results"></div>
+      <p class="command-hint">Use ↑ ↓ to navigate · Enter to open · Esc to close</p>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Syed Ahmed W home">SA<span>W</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="command-trigger" type="button" aria-label="Open quick navigation" title="Quick navigation (Ctrl/⌘ K)">Search <kbd>⌘K</kbd></button>
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme">◐</button>
+    </div>
+  </header>
+
+  <main id="main" class="section-wrap hub-main">
+    <div class="hub-breadcrumb">
+      <a href="index.html">Portfolio</a><span>/</span><span>Projects Hub</span>
+    </div>
+
+    <section class="hub-hero">
+      <h1>Projects</h1>
+      <p>Explore my Android apps, web tools, and data dashboards.</p>
+    </section>
+
+    <section class="project-browser" aria-label="Browse projects">
+      <div class="browser-toolbar">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="project-search" type="search" aria-label="Search projects" placeholder="Search projects or technologies…" autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+        <div class="browser-tools">
+          <span class="results-count" id="results-count">7 projects</span>
+          <div class="sort-control">
+            <span>SORT</span>
+            <select id="project-sort" aria-label="Sort projects">
+              <option value="default">Default</option>
+              <option value="az">A → Z</option>
+              <option value="category">Category</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-row" role="group" aria-label="Filter by category">
+        <button class="filter-chip active" data-filter="all" aria-pressed="true">All work <span>07</span></button>
+        <button class="filter-chip" data-filter="app" aria-pressed="false">Applications <span>04</span></button>
+        <button class="filter-chip" data-filter="analytics" aria-pressed="false">Analytics <span>02</span></button>
+        <button class="filter-chip" data-filter="personal" aria-pressed="false">Personal <span>01</span></button>
+      </div>
+
+      <div class="project-grid" id="project-grid">
+        <!-- 01 VaultCards -->
+        <article class="project-tile" data-category="app" data-search="vaultcards android privacy vault biometric identity bank card family records kotlin jetpack compose room">
+          <a class="tile-visual visual-vault" href="project.html?id=vaultcards" aria-label="View VaultCards project">
+            <span class="visual-label">ANDROID / PRIVACY</span>
+            <img class="tile-app-preview" src="assets/project-screenshots/vaultcards/vault-settings.jpeg" alt="" loading="lazy" width="720" height="1600">
+          </a>
+          <h2><a href="project.html?id=vaultcards">VaultCards</a></h2>
+          <p>A private, offline-first Android vault for cards, banking details, identity documents, and family records — with AES-256 encryption.</p>
+          <div class="card-tags"><span>Kotlin</span><span>Jetpack Compose</span><span>Room DB</span></div>
+        </article>
+
+        <!-- 02 Travel Expense Tracker -->
+        <article class="project-tile" data-category="app" data-search="travel expense tracker javascript chart.js service workers progressive web app offline localstorage budget alerts json csv excel export pwa">
+          <a class="tile-visual visual-expense" href="project.html?id=expense-tracker" aria-label="View Travel Expense Tracker project">
+            <span class="visual-label">PWA / TRAVEL FINANCE</span>
+            <img class="tile-app-preview" src="assets/project-screenshots/travel/summary.webp" alt="" loading="lazy" width="540" height="1159">
+          </a>
+          <h2><a href="project.html?id=expense-tracker">Travel Expense Tracker</a></h2>
+          <p>An installable PWA with offline functionality, Chart.js pie-chart visualizations, budget alerts, and JSON/CSV/Excel export.</p>
+          <div class="card-tags"><span>JavaScript</span><span>Chart.js</span><span>PWA</span></div>
+        </article>
+
+        <!-- 03 SGPA Calculator 2.0 -->
+        <article class="project-tile" data-category="app" data-search="sgpa calculator academic performance tracker javascript html css local storage weighted algorithm grade point credits private repository pwa">
+          <a class="tile-visual visual-sgpa" href="project.html?id=sgpa-calculator" aria-label="View SGPA Calculator project">
+            <span class="visual-label">EDUCATION / WEB</span>
+            <img class="tile-sgpa-icon" src="assets/project-screenshots/apps/sgpa-calculator-icon.png" alt="" loading="lazy" width="512" height="512">
+          </a>
+          <h2><a href="project.html?id=sgpa-calculator">SGPA Calculator 2.0</a></h2>
+          <p>A responsive single-page SGPA calculator with credit-weighted calculations, real-time grade-point computation, and browser-based data persistence.</p>
+          <div class="card-tags"><span>JavaScript</span><span>HTML / CSS</span><span>Local Storage</span></div>
+        </article>
+
+        <!-- 04 Stock Data Analysis -->
+        <article class="project-tile" data-category="analytics" data-search="stock data analysis dashboard power bi dax financial 52 week performance data modeling kpis slicers">
+          <a class="tile-visual visual-stock" href="project.html?id=stock-dashboard" aria-label="View Stock Data Analysis project">
+            <span class="visual-label">POWER BI / FINANCE</span>
+            <div class="stock-lines"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </a>
+          <h2><a href="project.html?id=stock-dashboard">Stock Data Analysis</a></h2>
+          <p>A Power BI dashboard analyzing 52-week stock performance with advanced DAX calculations, dynamic KPIs, slicers, and data modeling.</p>
+          <div class="card-tags"><span>Power BI</span><span>DAX</span><span>Data Modeling</span></div>
+        </article>
+
+        <!-- 05 Global CO₂ Emission Analytics -->
+        <article class="project-tile" data-category="analytics" data-search="global co2 emission analytics tableau geospatial maps trends environment climate visualization">
+          <a class="tile-visual visual-co2" href="project.html?id=co2-analytics" aria-label="View Global CO₂ Emission Analytics project">
+            <span class="visual-label">TABLEAU / CLIMATE</span>
+            <img class="tile-tableau-preview" src="assets/project-screenshots/tableau/dashboard.png" alt="" loading="lazy" width="192" height="192">
+          </a>
+          <h2><a href="project.html?id=co2-analytics">Global CO₂ Emission Analytics</a></h2>
+          <p>A Tableau dashboard using geospatial maps, trend visualizations, and dynamic filters to explore global emissions patterns.</p>
+          <div class="card-tags"><span>Tableau</span><span>Geospatial</span><span>Data Viz</span></div>
+        </article>
+
+        <!-- 06 Interactive Weather App -->
+        <article class="project-tile" data-category="app" data-search="interactive weather application javascript openweather api responsive real time async fetch">
+          <a class="tile-visual visual-weather" href="project.html?id=weather-app" aria-label="View Weather Application project">
+            <span class="visual-label">WEB / API</span>
+            <div class="weather-sun" aria-hidden="true"></div>
+            <div class="weather-temp" aria-hidden="true">24°</div>
+          </a>
+          <h2><a href="project.html?id=weather-app">Interactive Weather App</a></h2>
+          <p>A responsive weather application integrating the OpenWeather API for async data fetching, dynamic rendering, and error handling.</p>
+          <div class="card-tags"><span>JavaScript</span><span>REST API</span><span>Responsive</span></div>
+        </article>
+
+        <!-- 07 Personal Portfolio Website -->
+        <article class="project-tile" data-category="personal" data-search="personal portfolio website html css javascript formspree redesign accessibility dark theme">
+          <a class="tile-visual visual-portfolio" href="project.html?id=portfolio" aria-label="View Personal Portfolio Website project">
+            <span class="visual-label">PERSONAL / WEB</span>
+            <div class="portfolio-type">SAW<span>.</span></div>
+          </a>
+          <h2><a href="project.html?id=portfolio">Personal Portfolio Website</a></h2>
+          <p>My portfolio with project galleries, a searchable directory, and an interactive voice introduction.</p>
+          <div class="card-tags"><span>HTML / CSS</span><span>JavaScript</span><span>Accessibility</span></div>
+        </article>
+      </div>
+
+      <div class="empty-state" id="empty-state" hidden>
+        <span>⌕</span>
+        <h3>No matching projects</h3>
+        <p>Try another search term or clear your category filter.</p>
+        <button id="clear-filters" class="text-link">Clear filters</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer section-wrap">
+    <a class="wordmark" href="index.html">SA<span>W</span></a>
+
+    <span>© <span id="year"></span> Syed Ahmed W</span>
+  </footer>
+</body>
+</html>
